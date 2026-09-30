@@ -1,0 +1,10 @@
+# Salin ke android/key.properties lalu isi setelah membuat keystore (opsional).
+# Tanpa file ini, build release memakai debug signing (cukup untuk sideload / demo).
+#
+# Buat keystore (sekali):
+#   keytool -genkey -v -keystore upload-keystore.jks -keyalg RSA -keysize 2048 -validity 10000 -alias upload
+#
+storePassword=GANTI_PASSWORD_KEYSTORE
+keyPassword=GANTI_PASSWORD_KEY
+keyAlias=upload
+storeFile=upload-keystore.jks
